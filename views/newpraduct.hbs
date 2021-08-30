@@ -1,0 +1,50 @@
+<h1>Yangi mahsulot qo'shish</h1>
+<form action="/praducts/" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Tavar Nomi</label>
+        <input type="text" class="form-control mb-3" id="name" placeholder="Tavar nomi" name="name">
+
+        <label for="day" class="form-label">Ishlab chiqarilgan sana</label>
+        <input type="text" class="form-control mb-3" id="name" placeholder="Ishlab chiqarilgan sana" name="day">
+        
+        <label for="name" class="form-label">Firma nomi </label>
+        <input type="text" class="form-control mb-3" id="fname" placeholder="Firma nomi" name="fname">
+
+        <label for="Email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" name="email">
+        <label for="adress" class="form-label">Address</label>
+        <input type="text" class="form-control mb-3"  name="vadress">
+        <select name="depart" class="form-select mb-3" aria-label="Default select example">
+            <option selected>Qaysi tipdagi mahsulot</option>
+            <option value="Oziq-ovqat">Oziq-ovqat</option>
+            <option value="Qurilish">Qurilish</option>
+            <option value="Texnika">Texnika</option>
+        </select>
+        <label for=""class="mb-2">Qaysi do'konga tarqatish</label>
+        <div class="form-check">
+            <input class="form-check-input" name="doc" type="checkbox" value="Megaplanet" id="megplanet"  >
+            <label class="form-check-label" for="flexCheckDefault" checked>
+                Megaplanet
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" name="doc" type="checkbox" value="Makro" id="makro" >
+            <label class="form-check-label" for="flexCheckChecked">
+                Makro
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" name="doc" type="checkbox" value="Havas" id="havas">
+            <label class="form-check-label" for="flexCheckDefault">
+                Havas
+            </label>
+        </div>
+        <div class="form-check mb-4">
+            <input class="form-check-input" name="doc" type="checkbox" value="Karzinka" id="karzinka" >
+            <label class="form-check-label" for="flexCheckChecked">
+                Karzinka
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+</form>

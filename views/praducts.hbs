@@ -1,0 +1,33 @@
+<a href="/praducts/add"><button type="button" class="btn btn-success mt-2 mb-3">Yangi mahsulot</button></a>
+{{#if praducts.length}}
+<table class="table table-success table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Tavar nomi</th>
+            <th scope="col">Ishlab  chiqarilgan sana</th>
+            <th scope="col">Firma nomi</th>
+            <th scope="col">Email adress</th>
+            <th scope="col">Adress</th>
+            <th scope="col">Qaysi tipdagi mahsulot</th>
+            <th scope="col">Qaysi dokonga tarqatilishi</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each praducts}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{day}}</td>
+            <td>{{fname}}</td>
+            <td>{{email}}</td>
+            <td>{{vadress}}</td>
+            <td>{{depart}}</td>
+            <td>{{doc}}</td>
+            <td><a href="/praducts/{{id}}"><button type="button" class="btn btn-info">Batafsil</button></a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<h2>Bunday tavar topilnmadi</h2>
+{{/if}}

@@ -1,0 +1,41 @@
+<a href="/persons/add"><button type="button" class="btn btn-success mt-2 mb-3">Yangi hodim qo'shish</button></a>
+{{#if persons.length}}
+
+<table class="table table-success table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Ismi</th>
+            <th scope="col">Familiyasi</th>
+            <th scope="col">Email adress</th>
+            <th scope="col">Telefon raqam</th>
+            <th scope="col">Tug'ilgan yili</th>
+            <th scope="col">Yashash manzili</th>
+            <th scope="col">Biladigan dasturlash tili </th>
+            <th scope="col">Nechi yil tajribasi bor</th>
+            <th scope="col">Rasmi</th>
+            <th scope="col">Qaysi bo'limga ishga kiryapti</th>
+            {{!-- <th scope="col">Qo'shimcha ma'lumotlari</th> --}}
+            <th>Info</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each persons}}
+        <tbody>
+            <td>{{name}}</td>
+            <td>{{fm}}</td>
+            <td>{{email}}</td>
+            <td>{{tel}}</td>
+            <td>{{day}}</td>
+            <td>{{vadress}}</td>
+            <td>{{depart}}</td>
+            <td>{{opt}}</td>
+            <td>{{img}}</td>
+            <td>{{doc}}</td>
+            <td><a href="/persons/{{id}}"><button type="button" class="btn btn-info">Batafsil</button></a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<h2>Bunday xodim topilmadi</h2>
+{{/if}}

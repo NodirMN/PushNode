@@ -1,0 +1,44 @@
+<h1>Yangi hodim qo'shish</h1>
+<form action="/persons/" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Ism</label>
+        <input type="text" class="form-control mb-3" id="name" placeholder="Ism" name="name">
+
+        <label for="text" class="form-label">Familiya</label>
+        <input type="text" class="form-control mb-3"  placeholder="Familiya"name="fm">
+
+        <label for="Email" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" name="email">
+
+        <label for="Telefon" class="form-label">Telefon</label>
+        <input type="tel" class="form-control" id="tel" aria-describedby="tellHelp" name="tel">
+
+        <label for="nuber" class="form-label">Tug'ilgan yili</label>
+        <input type="text" class="form-control"  name="day">
+
+
+
+        <label for="adress" class="form-label">Address</label>
+        <input type="text" class="form-control mb-3" name="vadress">
+
+        <select name="depart" class="form-select mb-3" aria-label="Default select example">
+            <option selected>Biladigan dasturlash tili</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Python">Python</option>
+            <option value="PHP">PHP</option>
+        </select>
+        <label for="nuber" class="form-label" >Nechi yil tajribasi bor</label>
+    
+        <input type="text" class="form-control m-3" id="opt" aria-describedby="dayHelp" name="opt">
+
+        <div><img src="..." class="img-thumbnail mb-3"name='img' alt="..."></div>
+
+        <select name="doc" class="form-select mb-3" aria-label="Default select example">
+            <option selected>Qaysi bo'limga ishga kirmoqchi</option>
+            <option value="Menijment">Menijment</option>
+            <option value="Mobil dasturlash">Mobil dasturlash</option>
+            <option value="Dasturlash">Dasturlash</option>
+        </select>
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+</form>

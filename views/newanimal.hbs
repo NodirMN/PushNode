@@ -1,0 +1,51 @@
+<h1>Yangi hodim qo'shish</h1>
+<form action="/animals/" method="post">
+    <div class="mb-3">
+        <label for="name" class="form-label">Hayvon turi</label>
+        <input type="text" class="form-control mb-3" id="name" placeholder="Ism" name="name">
+
+        <label for="text" class="form-label">Tug'ilgan joyi</label>
+        <input type="text" class="form-control mb-3" placeholder="Tug'ilgan joyi" name="place">
+
+        <label for="nuber" class="form-label">Vazni</label>
+        <input type="text" class="form-control" name="kg">
+
+        <label for="Rangi" class="form-label">Rangi</label>
+        <input type="text" class="form-control mb-2" name="tel">
+
+        <label for="Rangi" class="form-label">Yashash muxiti</label>
+        <input type="text" class="form-control mb-2" name="adap">
+
+        <label for="Rangi" class="form-label">Laqabi</label>
+        <input type="text" class="form-control mb-2" name="klich">
+
+        <select name="depart" class="form-select mb-3" aria-label="Default select example">
+            <option selected>Qaysi zo'naga biriktiriladi</option>
+            <option value="Yirtqich">Yirtqich</option>
+            <option value="O'txo'r">O'txo'r</option>
+            <option value="Sut emizuvchi">Sut emizuvchi</option>
+        </select>
+        <label for="" class="mb-2">Qaysi xodim javob beradi</label>
+        <div class="form-check">
+            <input class="form-check-input" name="doc" type="checkbox" value="Qodirov Aziz" id="megplanet">
+            <label class="form-check-label" for="flexCheckDefault" checked>
+                Qodirov Aziz
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" name="doc" type="checkbox" value="Boxodirov Javohir" id="makro">
+            <label class="form-check-label" for="flexCheckChecked">
+                Boxodirov Javohir
+            </label>
+        </div>
+        <div class="form-check mb-2">
+            <input class="form-check-input" name="doc" type="checkbox" value="Eshonov Bohodir" id="havas">
+            <label class="form-check-label" for="flexCheckDefault">
+                Eshonov Bohodir
+            </label>
+        </div>
+        <label for="Qachondan zooparikda yashashi" class="form-label">Qachondan zooparikda yashashi</label>
+        <input type="text" class="form-control mb-2" name="dat">
+        <button type="submit" class="btn btn-primary ">Submit</button>
+    </div>
+</form>

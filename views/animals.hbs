@@ -1,0 +1,38 @@
+<a href="/animals/add"><button type="button" class="btn btn-success mt-2 mb-3">Yangi Hayvon</button></a>
+{{#if animals.length}}
+<table class="table table-success table-bordered">
+    <thead>
+        <tr>
+            <th scope="col">Hayvon turi</th>
+            <th scope="col">Tug'ilgan joyi</th>
+            <th scope="col">Vazni</th>
+            <th scope="col">Rangi</th>
+            <th scope="col">Yashash muhiti</th>
+            <th scope="col">Laqabi</th>
+            <th scope="col">Qaysi zonaga biriktirilishi</th>
+            <th scope="col">Qachondan zooparikda yashashi</th>
+            <th scope="col">Qaysi hodim javob berishi</th>
+            <th scope="col">Info</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        {{#each animals}}
+        <tr>
+            <td>{{name}}</td>
+            <td>{{place}}</td>
+            <td>{{kg}}</td>
+            <td>{{tel}}</td>
+            <td>{{adap}}</td>
+            <td>{{klich}}</td>
+            <td>{{depart}}</td>
+            <td>{{dat}}</td>
+            <td>{{doc}}</td>
+            <td><a href="/animals/{{id}}"><button type="button" class="btn btn-info">Batafsil</button></a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+{{else}}
+<h2>Bunday hayvon topilmadi</h2>
+{{/if}}

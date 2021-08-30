@@ -1,0 +1,1 @@
+[{"name":"Maymun","place":"Afrika","kg":"22kg","tel":"Jigar rang","adap":"Subtropik","klich":"Tarzan","dat":"22/12/21","depart":"O'txo'r","doc":"Boxodirov Javohir","id":"b9b86b8c-1a61-4914-9428-0cb936e598bf"}]
